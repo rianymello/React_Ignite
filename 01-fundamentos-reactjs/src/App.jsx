@@ -1,9 +1,25 @@
+import { Header } from "./componets/Header"
+import { Post } from "./Post"
+import './global.css'
 
-function App() {
+export function App() {
 
   return (
-    <h1>Hello World</h1>
-  )
+    <div>
+
+      <Header />
+
+      <Post
+        author="Riany Mello"
+        content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae cupiditate dolorem nisi tenetur ea, iure distinctio vero dicta repellat perferendis debitis nobis quasi laborum expedita quis similique, ipsam architecto facere?"
+      />
+      <Post 
+        author="Gabriel"
+        content="oieeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      />
+      
+      </div>
+    )
   }
 
-export default App
+
