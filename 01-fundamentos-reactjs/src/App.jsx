@@ -1,6 +1,8 @@
-import { Header } from "./componets/Header"
-import { Post } from "./Post"
-import './global.css'
+import { Header } from "./componets/Header";
+import { Post } from "./Post";
+import './global.css';
+import styles from './App.module.css';
+import { Sidebar } from "./componets/Sidebar";
 
 export function App() {
 
@@ -9,14 +11,22 @@ export function App() {
 
       <Header />
 
-      <Post
+      <div className={styles.wrapper}>
+        
+        <Sidebar />
+
+        <main>
+        <Post
         author="Riany Mello"
-        content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae cupiditate dolorem nisi tenetur ea, iure distinctio vero dicta repellat perferendis debitis nobis quasi laborum expedita quis similique, ipsam architecto facere?"
+        content="met consectetur adipisicing elit. Beatae cupiditate dolorem nisi tenetur ea, iure distinctio vero dicta repellat perferendis debitis"
       />
       <Post 
         author="Gabriel"
-        content="oieeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        content="oieeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeese"
       />
+        </main>
+
+      </div>
       
       </div>
     )
