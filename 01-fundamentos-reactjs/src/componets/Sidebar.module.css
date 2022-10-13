@@ -40,7 +40,7 @@
 }
 
 .Sidebar footer {
-    border-top: 1px solid var(--pink);
+    border-top: 1px solid var(--gray-600);
     margin-top: 1.5rem;
     padding: 1.5rem 2rem 2rem;
 }
