@@ -23,7 +23,7 @@
     height: calc(3rem + 12px);
     border-radius: 8px;
     border: 4px solid var(--gray-800);
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--pink-500);
 }
 
 .profile strong {
@@ -47,8 +47,8 @@
 
 .Sidebar footer a {
     background: transparent;
-    color: var(--pink);
-    border: 1px solid var(--pink);
+    color: var(--pink-500);
+    border: 1px solid var(--pink-500);
     border-radius: 8px;
     height: 50px;
     padding: 0 1.5rem;
@@ -64,6 +64,6 @@
 }
 
 .Sidebar footer a:hover {
-    background: var(--pink);
+    background: var(--pink-500);
     color: var(--white);
 }
