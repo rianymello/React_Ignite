@@ -1,3 +1,4 @@
+import { ThumbsUp, Trash } from 'phosphor-react'
 import styles from './comment.module.css'
 
 
@@ -17,6 +18,7 @@ export function comment (){
                     </div>
                             <button title='Deletar comentário'>
         
+                            <Trash size={20}/>
 
                             </button>
                 </header>
@@ -26,7 +28,10 @@ export function comment (){
 
 
             <footer>
-                Aplaudir
+                <button>
+               <ThumbsUp />
+               Aplaudir <span>20</span>
+               </button>
             </footer>
 
         </div>
