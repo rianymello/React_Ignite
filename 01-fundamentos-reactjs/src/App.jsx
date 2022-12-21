@@ -4,6 +4,38 @@ import { Sidebar } from "./componets/Sidebar";
 
 import './global.css';
 
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl: 'https://github.com/diego3g.png',
+      name: 'Diego Fernandes',
+      role: 'CTO @Rocketseat'
+    },
+    content: [
+      { type: 'paragraph', content: 'Ola amigos 👋' },
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz na Rocketseat. O nome do projeto é IgniteFeed 🚀' },
+      { type: 'link', content: 'Rocketseat.Diego/IginiteFeed' },
+    ],
+    publishedAt: new Date('2022-12-03 13:00:00'),
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: 'https://github.com/maykbrito.png',
+      name: 'Mayk Brito',
+      role: 'Educator @Rocketseat'
+    },
+    content: [
+      { type: 'paragraph', content: 'Fala galerinha 👋' },
+      { type: 'paragraph', content: 'Acabei de ser promovido a Educador na Rocktseat. É uma enorme conquista pra mim, estou muito grato pela oportunidade🚀' },
+      { type: 'paragraph', content: 'Aqui em baixo tem o link da minha ultima aula. Vai lá conferir!' },
+      { type: 'link', content: 'Rocketseat.Maykbrito/Aula-1' },
+    ],
+    publishedAt: new Date('2022-12-18 20:00:00'),
+  },
+];
+
 import styles from './App.module.css';
 
 
@@ -20,14 +52,15 @@ export function App() {
         <Sidebar />
 
         <main>
-        <Post
-        author="Riany Mello"
-        content="met consectetur adipisicing elit. Beatae cupiditate dolorem nisi tenetur ea, iure distinctio vero dicta repellat perferendis debitis"
-      />
-      <Post 
-        author="Gabriel"
-        content="oieeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeese"
-      />
+        {posts.map(post => {
+            return (
+              <Post
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            )
+          })}
         </main>
 
       </div>
