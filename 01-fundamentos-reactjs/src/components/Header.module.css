@@ -8,3 +8,10 @@
 .header img {
     height: 2rem ;
 }
+
+strong {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+   margin-left: 0.5rem;
+}
