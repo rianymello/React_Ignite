@@ -3,7 +3,7 @@ import ptBR from 'date-fns/locale/pt-BR';
 
 import styles from './Post.module.css'
 
-import { Comment } from './Comment'
+import { Comment } from '../components/Comment'
 import { Avatar } from './Avatar'
 
 export function Post({ author, publishedAt, content }) {
